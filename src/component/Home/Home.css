@@ -1,0 +1,27 @@
+
+.icon{
+   margin: 0; 
+   padding:0;
+   position: fixed;
+   left: 0;
+   top: 240px;
+}
+.icon ul li{
+    list-style-type: none;
+    
+}
+
+.icon li{
+    
+    margin-bottom: 30px;
+    cursor: pointer;
+    width:5%;
+}
+
+.icon i:hover{
+    
+    background-color: #FF9D16;
+   color: #fff;
+   border-radius: 50%;
+    padding:5px;
+}

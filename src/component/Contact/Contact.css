@@ -1,0 +1,10 @@
+.form{
+    margin: auto;
+  /* background-image: url('https://images.vexels.com/media/users/2049/76512/preview2/df0bc53f28a929d8a83c6c19cfe7ed60-dark-cubic-background.jpg'); */
+  padding:50px;
+  box-shadow: 0rem 1rem rgba(0, 0, 50, 0.5);
+  border-radius: 10px;
+ 
+  overflow: hidden;
+    
+}

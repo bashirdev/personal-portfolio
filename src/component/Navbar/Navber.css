@@ -1,0 +1,10 @@
+.cus-nav{
+
+   letter-spacing: 2px;
+   
+}
+.cus-nav:hover{
+  border-top: 1px red solid;
+  border-bottom: 1px red solid;
+  transition: 1s ease-in;
+}
