@@ -2,7 +2,7 @@ import React from 'react';
 import { Button, Card, Col,  Image,  Row } from 'react-bootstrap';
 import './Home.css';
 
-import profile from '../../images/profile-pic.png'
+import profile from '../../images/profile-pic2.png'
 
 import { LinkContainer } from 'react-router-bootstrap';
 import Typical from 'react-typical';
@@ -62,7 +62,7 @@ const Home = () => {
 	        }
 	    }
 	}} />
-     <div className='foot' style={{marginTop:'650px'}}>
+     <div className='foot' style={{marginTop:'700px'}}>
       <Footer />  
       </div>  
         </>

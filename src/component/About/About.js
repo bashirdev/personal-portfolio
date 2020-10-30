@@ -30,7 +30,7 @@ const About = () => {
               !</p>
               
               </div>
-              <div className='mt-3'>
+              <div className='mt-5'>
               <h2>My Skills</h2>
                 <ListGroup>
                 <Row>

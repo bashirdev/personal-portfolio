@@ -2,8 +2,8 @@ import React from 'react';
 import Creative from '../../images/creative-agency.PNG'
 import Volunteer from '../../images/volunteer-network.PNG'
 import Travel from '../../images/travel-guru.PNG'
-import { Button, Card, Col,  Row } from 'react-bootstrap';
-import Common from '../Common/Common';
+import { Button, Card,   Row } from 'react-bootstrap';
+
 import Slider from "react-slick";
 import './Portfolio.css'
 
@@ -103,7 +103,7 @@ const Portfolio = () => {
  {/* Slider section */}
  <section className='container-fluid mt-5'>
  <div className='text-center mt-3 mb-5'>
-     <h3>Some more static responsive design</h3>
+     <h3>Some more frontend website </h3>
  </div>
  <Slider className='mt-3 py-3 container-fluid w-100'  {...setting} >
      
