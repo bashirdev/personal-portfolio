@@ -2,14 +2,16 @@ import React from 'react';
 import { Button, Col, Image, ListGroup, Row } from 'react-bootstrap';
 import { LinkContainer } from 'react-router-bootstrap';
 import profile from '../../images/profile-pic.png'
-import Common from '../Common/Common';
+import Footer from '../Footer/Footer';
+
 import './About.css'
 const About = () => {
     return (
+      <>
         <section className='container-lg'>
             <Row className='d-flex justify-content-sm-between align-items-center'>
                
-                <Col  sm={12} md={6} lg={3} xl={3} className='justify-content-center text-center ' >
+                <Col  sm={12} md={6} lg={3} xl={3} className='justify-content-center text-center ani-abt-img ' >
             <div>
              <Image className='img'   style={{height:'50vh'}} src={profile} alt="" />
              </div>
@@ -19,7 +21,7 @@ const About = () => {
                 </div>
              </Col>
               
-              <Col sm={12} md={6}>
+              <Col className='ani-abt-skill' sm={12} md={6}>
                  
                  <div >
              <h1>I'm Bashir Ahammed</h1>
@@ -89,15 +91,12 @@ const About = () => {
                 
               </Col>
             </Row>
-            <div className='icon'>
-     <div>
-         <Col>
-            <Common />
-         </Col>
-     </div>
-           
-            </div>
+            
         </section>
+        <div style={{marginTop:'100px'}}>
+      <Footer />  
+      </div> 
+        </>
     );
 };
 

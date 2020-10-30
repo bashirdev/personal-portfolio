@@ -5,7 +5,7 @@ body{
     box-sizing: border-box;
     
 }
-h1{
+h1,h2,h3,h4,h5,h6{
     font-family: 'Lato', sans-serif; 
 }
 p{
@@ -15,4 +15,67 @@ p{
     font-family: 'Lato', sans-serif;
 }
 
-@media
+.ani-mation{
+    animation: slideInFromLeft 1.5s ease-in;
+}
+.ani-mation-img{
+    animation: slideInFromRight 1.5s ease-in;
+}
+.ani-abt-img{
+    animation:slideInFromTop 1s ease-in;
+}
+.ani-abt-skill{
+   animation: slideInFromBottom 1s ease-in;
+}
+
+.ani-frm{
+     animation:formOpacity 1.5s ease-in;
+}
+
+/* Animation */
+@keyframes formOpacity{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@keyframes slideInFromLeft{
+    0%{
+        transform:translateX(-100%)
+    }
+    100%{
+        transform:translateX(0)
+    }
+}
+
+@keyframes slideInFromRight{
+    0%{
+        transform:translateX(100%)
+    }
+    100%{
+        transform:translateX(0)
+    }
+}
+
+@keyframes slideInFromTop{
+    0%{
+        transform:translateY(-100%)
+    }
+    100%{
+        transform:translateX(0)
+    }
+}
+
+@keyframes slideInFromBottom{
+    0%{
+        transform:translateY(100%)
+    }
+    100%{
+        transform:translateX(0)
+    }
+}
+
+
+

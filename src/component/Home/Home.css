@@ -1,27 +1,35 @@
-
-.icon{
-   margin: 0; 
-   padding:0;
-   position: fixed;
-   left: 0;
-   top: 240px;
-}
-.icon ul li{
-    list-style-type: none;
+.particles{
+    z-index: 95;
+    width:100%;
+    align-items: center;
+    justify-content:center;
     
 }
 
-.icon li{
+.home-sec{
+   
+    position: absolute;
     
-    margin-bottom: 30px;
-    cursor: pointer;
-    width:5%;
+    z-index: 90;
 }
 
-.icon i:hover{
-    
-    background-color: #FF9D16;
-   color: #fff;
-   border-radius: 50%;
-    padding:5px;
+.home-sec, .ani-mation{
+    z-index: 600;
 }
+
+
+@media(max-width:968px){
+
+    .particles{
+       display:none;
+    }
+   
+    }
+    
+    @media(max-width:500px){
+        .particles {
+            display:none;
+          
+        }
+        
+    }

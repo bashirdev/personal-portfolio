@@ -1,0 +1,47 @@
+.sideber{
+    background-color:#1E424A;
+    position: fixed;
+    width:70px;
+    height: 26vh;
+   top: 270px;
+   opacity: 0.9;
+    z-index: 1000;
+   
+}
+.sideber  ul  li{
+   justify-content:center !important;
+   align-items: center !important;
+   
+}
+ul li{
+    list-style-type: none;
+}
+
+
+ ul {
+  position:absolute;
+    margin-bottom: 1rem !important;
+   margin-right: 100px;
+
+}
+
+.sideber li{
+    text-align: center;
+    margin-bottom: 30px;
+    cursor: pointer;
+    opacity: 1;
+}
+
+ .fab:hover{
+    
+    background-color: #FF9D16;
+   color: #fff;
+   border-radius: 50%;
+    
+    opacity: 1;
+}
+
+
+
+
+

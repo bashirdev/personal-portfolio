@@ -4,16 +4,18 @@ import { BrowserRouter as Router, Route} from 'react-router-dom';
 import Home from './component/Home/Home';
 import About from './component/About/About';
 import Navbar from './component/Navbar/Navbar';
-import Footer from './component/Footer/Footer'
+
 import Portfolio from './component/Portfolio/Portfolio';
 import Contact from './component/Contact/Contact';
 import Resume from './component/Resume/Resume';
+import Common from './component/Common/Common';
 const App = () => {
   return (
     <Router>
+     <Common  className='common' />
     <Navbar />
-  <main className='py-5 mt-5'>
-    <Container className='my-5'>
+   
+    <Container className='py-5 my-5'>
     <Route exact path='/'>
       <Home />
     </Route>
@@ -30,8 +32,8 @@ const App = () => {
       <Resume />
     </Route>
     </Container>
-    </main>
-    <Footer />
+    
+ 
    </Router>
   );
 };

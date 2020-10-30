@@ -8,6 +8,7 @@ import Slider from "react-slick";
 import './Portfolio.css'
 
 import CarouselItemPreview from '../CarouselItemPreview/CarouselItemPreview';
+import Footer from '../Footer/Footer';
 
 const Portfolio = () => {
     const setting ={
@@ -26,7 +27,7 @@ const Portfolio = () => {
             <h2>Full Stact Web site</h2>
         </div>
            <Row className='text-center m-2 justify-content-center '>
-           <Card className='m-2 ' style={{ width: '18rem' }}>
+           <Card className='m-2 ani-abt-img' style={{ width: '18rem' }}>
        <Card.Img variant="top" src={Creative} />
        <Card.Body>
        <Card.Title>Creative Agency</Card.Title>
@@ -51,7 +52,7 @@ const Portfolio = () => {
      </Card.Body>
     </Card>
 
-    <Card className='m-2 ' style={{ width: '18rem' }}>
+    <Card className='m-2 ani-abt-skill ' style={{ width: '18rem' }}>
        <Card.Img variant="top" src={Volunteer} alt=''/>
        <Card.Body>
        <Card.Title>Volunteer Network</Card.Title>
@@ -72,7 +73,7 @@ const Portfolio = () => {
     </Row>
   </Card.Body>
 </Card>
-  <Card className='m-2 ' style={{ width: '18rem' }}>
+  <Card className='m-2 ani-abt-img' style={{ width: '18rem' }}>
        <Card.Img variant="top" src={Travel} alt=''/>
        <Card.Body>
        <Card.Title>Travel Guru</Card.Title>
@@ -97,26 +98,20 @@ const Portfolio = () => {
 </Card>
         
 </Row>
- <div className='icon'>
-     <div>
-         <Col>
-            <Common />
-         </Col>
-     </div>
-</div>
+
  </section>
  {/* Slider section */}
  <section className='container-fluid mt-5'>
  <div className='text-center mt-3 mb-5'>
      <h3>Some more static responsive design</h3>
  </div>
- <Slider className='mt-3 container-fluid w-100'  {...setting} >
+ <Slider className='mt-3 py-3 container-fluid w-100'  {...setting} >
      
          {
             CarouselItemPreview.map(item =>(
-                <Row className='d-flex container-fluid'>
-                <Card className='w-100 text-center'   >
-                   <Card.Img  className='img-fluid' src={item.img} alt=''  style={{height:'20vh'}} />
+                <Row className='d-flex container-fluid '>
+                <Card className='w-100 text-center '   >
+                   <Card.Img  className='img-fluid ' src={item.img} alt=''  style={{height:'20vh'}} />
                    <h4 className='py-3'>{item.name}</h4>
                 </Card>
                 </Row>
@@ -127,6 +122,10 @@ const Portfolio = () => {
      </Slider>
  </section>
  </div>
+
+ <div style={{marginTop:'50px'}}>
+      <Footer />  
+      </div> 
  </>
     );
 };
