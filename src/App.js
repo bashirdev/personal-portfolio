@@ -9,6 +9,7 @@ import Portfolio from './component/Portfolio/Portfolio';
 import Contact from './component/Contact/Contact';
 import Resume from './component/Resume/Resume';
 import Common from './component/Common/Common';
+import Blog from './component/Blog/Blog';
 const App = () => {
   return (
     <Router>
@@ -27,6 +28,9 @@ const App = () => {
     </Route>
     <Route  path='/contact'>
       <Contact />
+    </Route>
+    <Route  path='/blog'>
+      <Blog />
     </Route>
     <Route  path='/resume'>
       <Resume />
