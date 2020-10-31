@@ -11,14 +11,68 @@ import CarouselItemPreview from '../CarouselItemPreview/CarouselItemPreview';
 import Footer from '../Footer/Footer';
 
 const Portfolio = () => {
-    const setting ={
-        dots:true,
+//     const setting ={
+//         dots:true,
+//     slidesToShow:3,
+//     slidesToScroll:3,
+//     centerMode: true,
+//     autoplay:true,
+//    autoplaySpeed:3000
+//     }
+
+
+// dots: true,
+//     infinite: true,
+//     slidesToShow: 3,
+//     slidesToScroll: 3,
+//     autoplaySpeed:3000,
+//     autoplay:true,
+
+
+
+ const settings = {
+     dots:true,
     slidesToShow:3,
-    slidesToScroll:3,
-    centerMode: true,
-    autoplay:true,
-   autoplaySpeed:3000
-    }
+   slidesToScroll:3,
+   centerMode: true,
+   autoplay:true,
+  autoplaySpeed:3000,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          infinite: true,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 768,
+        settings: {
+            slidesToShow: 1,
+          slidesToScroll: 1,
+          initialSlide: 2
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          initialSlide: 2
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          initialSlide: 1
+        }
+      }
+    ]
+  };
     return (
         <>
         <div className='profile-bg' variant='dark'>
@@ -103,15 +157,15 @@ const Portfolio = () => {
  {/* Slider section */}
  <section className='container-fluid mt-5'>
  <div className='text-center mt-3 mb-5'>
-     <h3>Some more frontend website </h3>
+     <h3> More frontend website </h3>
  </div>
- <Slider className='mt-3 py-3 container-fluid w-100'  {...setting} >
+ <Slider className='mt-3 py-3 container-fluid '  {...settings} >
      
          {
             CarouselItemPreview.map(item =>(
-                <Row className='d-flex container-fluid '>
-                <Card className='w-100 text-center '   >
-                   <Card.Img  className='img-fluid ' src={item.img} alt=''  style={{height:'20vh'}} />
+                <Row  className=' container w-100  row'>
+                <Card className='text-center'   >
+                   <Card.Img  className='img-fluid card-carousel ' src={item.img} alt=''  style={{height:'20vh'}} />
                    <h4 className='py-3'>{item.name}</h4>
                 </Card>
                 </Row>

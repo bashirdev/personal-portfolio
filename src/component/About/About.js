@@ -16,8 +16,8 @@ const About = () => {
              <Image className='img'   style={{height:'50vh'}} src={profile} alt="" />
              </div>
              <div className='m-5'>
-             <LinkContainer to='/portfolio'>
-                <Button className='items-skills w-100'>Portfolio</Button></LinkContainer>
+             <LinkContainer to='/project'>
+                <Button className='items-skills w-100'>Project</Button></LinkContainer>
                 </div>
              </Col>
               

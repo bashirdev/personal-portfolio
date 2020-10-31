@@ -20,8 +20,8 @@ const Navber = () => {
           <LinkContainer to='/about'>
             <Nav.Link   className='mr-3 cus-nav'>About</Nav.Link>
             </LinkContainer>
-            <LinkContainer to="/portfolio"> 
-            <Nav.Link  className='mr-3 cus-nav'>Portfolio</Nav.Link>
+            <LinkContainer to="/project"> 
+            <Nav.Link  className='mr-3 cus-nav'>Project</Nav.Link>
             </LinkContainer>
             <LinkContainer to='/contact'>
             <Nav.Link  className='mr-3 cus-nav'>Contact</Nav.Link>
