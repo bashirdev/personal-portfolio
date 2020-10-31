@@ -27,7 +27,7 @@ const Home = () => {
         loop={Infinity}
         wrapper='h4' />
              
-              <p>I am a frontend web developer. I make mordern website with parfect pixcel <br/>
+              <p>I am a frontend web developer. I make mordern website with perfect pixel <br/>
               and make user friendly, more interactive with animation
               !</p>
               <LinkContainer to='/about'>
