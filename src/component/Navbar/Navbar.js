@@ -1,14 +1,15 @@
 import React from 'react';
-import { Button, Container, Nav, Navbar } from 'react-bootstrap';
+import { Button, Container, Image, Nav, Navbar } from 'react-bootstrap';
 import { LinkContainer } from 'react-router-bootstrap';
 import './Navber.css';
+import logo from '../../images/logo-01.png'
 
 const Navber = () => {
     return (
         <Navbar bg="dark" variant='dark' expand="lg" fixed='top'  collapseOnSelect>
         <Container>
         <LinkContainer to='/'>
-        <Navbar.Brand className='cus-nav'>Bashir Ahammed</Navbar.Brand>
+        <Navbar.Brand className='cus-nav'>Bashir ahammed </Navbar.Brand>
         </LinkContainer>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">

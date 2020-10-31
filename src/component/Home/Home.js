@@ -15,7 +15,9 @@ const Home = () => {
     return (
         <>
    
-       
+  
+   
+   
         <section  className='mt-5 home-sec' >
         <Row className='align-items-center '>
             <Col sm={12} md={6} className="mr-5 ">
@@ -43,11 +45,11 @@ const Home = () => {
      
         </section>
 
-        <Particles className='particles'
-            params={{
+        <Particles className='particles container-fluid'   
+         params={{
 	    "particles": {
 	        "number": {
-	            "value": 30
+	            "value": 40
 	        },
 	        "size": {
 	            "value": 5
@@ -61,7 +63,9 @@ const Home = () => {
 	            }
 	        }
 	    }
-	}} />
+	}}/>
+      
+    
      <div className='foot' style={{marginTop:'700px'}}>
       <Footer />  
       </div>  

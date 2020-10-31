@@ -1,16 +1,17 @@
 .particles{
-    z-index: 95;
+    z-index: -1000;
     width:100%;
     align-items: center;
     justify-content:center;
     
 }
 
+
 .home-sec{
    
     position: absolute;
     
-    z-index: 90;
+    z-index: 1000;
 }
 
 .home-sec, .ani-mation{
@@ -21,15 +22,19 @@
 @media(max-width:968px){
 
     .particles{
-       display:none;
+       width: 100% !important;
+       height: 100% !important;
+       opacity: 0.2 !important;
     }
    
     }
     
     @media(max-width:500px){
         .particles {
-            display:none;
-          
+            width: 100% !important;
+            height: 100% !important;
+            opacity: 0.2 !important;
+
         }
         
     }

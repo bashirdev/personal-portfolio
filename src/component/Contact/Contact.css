@@ -4,7 +4,32 @@
   padding:50px;
   box-shadow: 0rem 1rem rgba(0, 0, 50, 0.5);
   border-radius: 10px;
- 
-  overflow: hidden;
-    
+ overflow: hidden;
+ width:70% !important; 
+}
+.form{
+  
+}
+
+@media(max-width:768px){
+  .my-form{
+    margin: auto;
+   
+   
+  }
+  .form{
+    width:100% !important;
+  }
+}
+
+
+@media(max-width:500px){
+  .my-form{
+    margin: auto;
+   
+   
+  }
+  .form{
+    width:100% !important;
+  }
 }
